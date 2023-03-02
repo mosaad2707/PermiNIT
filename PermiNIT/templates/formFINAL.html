@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+          background-image: url('/static/css/ring_suc.HEIC');
+          background-size: 100%;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+    <title>PermiNIT</title>
+</head>
+
+
+<body>
+    <form action="/api/send_email" method="post">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-sm bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/static/Logowhite.png" alt="" height="50" width="45"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Login Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">History</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row" style="margin:5% ;">
+            <div class="col-3">
+
+            </div>
+            <div class="col-6" style="background-color:#C4B4B9; padding: 4%; border-radius: 2%; opacity: .85;" >
+                <h2 style="margin-bottom: 5%; ">
+                    <b>Draft your Email Here!</b> 
+                </h2>
+                <h4>
+                    Select Your Recipient Below 
+                </h4>
+                    <select class="form-select  mb-3" name="recipient" aria-label=".form-select-lg example">
+                        <option selected  style=" opacity: 1;">Recipient</option>
+                        <option value="csea@nitc.ac.in">CSEA</option>
+                        <option value="_office.csas@nitc.ac.in">Sports Affair Secretary Officer</option>
+                        <option value="_chiefwarden@nitc.ac.in">Chief Warden, NITC Hostels</option>
+                        <option value="mdsaad12386@gmail.com">Saad_Test</option>
+                        <option value="_rajnikant@nitc.ac.in">Dean </option>
+                    </select>
+                  <h4>
+                    Select Your Reason Below 
+                  </h4>
+                <select class="form-select  mb-3" aria-label=".form-select-lg example" name="subject" >
+                    <option selected>Subject</option>
+                    <option value="Screen an event">Screen an Event</option>
+                    <option value="Conduct a Workshop">Conduct a Workshop</option>
+                    <option value="Availability of Pool">Availability of Pool</option>
+                    <option value="Availability of Football Ground">Availability of Football Ground</option>
+                    <option value="Availability of Basketball Court">Availability of Basketball Court</option>
+                    <option value="Availability of Badminton Court">Availability of Badminton Court</option>
+                    <option value="Availability of Volleyball Court">Availability of Volleyball Court</option>
+                    <option value="Conduct a Seminar">Conduct a Seminar</option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <!-- <label for="exampleDataList" class="form-label"><h4> OR </h4></label> -->
+                  <input class="form-control" id="exampleDataList" placeholder="Enter Other Reason" name="subject1">
+
+                  <label for="exampleDataList" class="form-label" style="margin-top: 3%;"><h4>Enter the Venue</h4></label>
+
+                  <input class="form-control" id="exampleDataList" placeholder="Enter Venue" name="venue">
+
+                  <label for="exampleDataList" class="form-label" style="margin-top: 3%;"><h4>Enter the Date</h4></label>
+                  <input class="form-control" id="exampleDataList" placeholder="DD/MM/YYYY" name="date">
+                  <div class="row">
+                    <div class="text-center" style="margin: 2%; margin-left: 0;">
+                        <button type="submit" class="btn btn-danger" style="align-self: center;" >SUBMIT</button>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+    </div>
+    </form>
+
+    
+
+
+  
+</body>
+</html>
