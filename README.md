@@ -1,7 +1,7 @@
 # PermiNIT
-This project was created as a part of Code.INIT() Hackathon where it had won 2nd Runners Up
-It is aimed to develop an automated permission system for colleges and similar organization.
-The web application is a flutter based stack which also uses SMTP library in python to automate the emails. Further template mapping has been implied for automation of these emails
+This project was created as a part of Code.INIT() Hackathon where it had won 2nd Runners Up.
+It is aimed to develop an automated permission system for colleges and similar organizations.
+The web application is a flutter based stack which also uses SMTP library in python to automate the emails. Further template mapping has been implied for automation of these emails.
 
 # Home Page Login 
 This page uses your organization based email account to verify your credentials and use it for sending the mail .
